@@ -5,7 +5,12 @@ using namespace std;
 
 
 bool accept() {
-    cout << "Do you want to preceed (y or n)?\n";
+
+    for (int i = 0; i < 10; ++i) {
+        cout << i << endl;
+    }
+
+    cout << "Do you want to proceed (y or n)?\n";
     
     char answer = 0;
     cin >> answer;
