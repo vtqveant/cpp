@@ -1,19 +1,28 @@
 class complex {
-    
     double re, im;
 
-    public:
+public:
 
-    	complex(double r, double i) { re = r; im = i; }
-        complex(double r) { re = r; im = 0; }
-        complex() { re = im = 0; }
+    complex(double r, double i) {
+        re = r;
+        im = i;
+    }
 
-        friend complex operator+(complex, complex);
-        friend complex operator-(complex, complex);
-        friend complex operator-(complex);
-        friend complex operator*(complex, complex);
-        friend complex operator/(complex, complex);
+    complex(double r) {
+        re = r;
+        im = 0;
+    }
 
-        friend bool operator==(complex, complex);
-        friend bool operator!=(complex, complex);
+    complex() {
+        re = im = 0;
+    }
+
+    friend complex operator+(complex, complex);
+    friend complex operator-(complex, complex);
+    friend complex operator-(complex);
+    friend complex operator*(complex, complex);
+    friend complex operator/(complex, complex);
+
+    friend bool operator==(complex, complex);
+    friend bool operator!=(complex, complex);
 };

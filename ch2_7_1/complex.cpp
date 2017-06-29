@@ -1,6 +1,5 @@
 #include "complex.h"
 
-
 complex operator+(complex z1, complex z2) {
     return complex(z1.re + z2.re, z1.im + z2.im);
 }

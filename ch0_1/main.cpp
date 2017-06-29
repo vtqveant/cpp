@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 bool accept() {
 
     for (int i = 0; i < 10; ++i) {
@@ -11,7 +10,7 @@ bool accept() {
     }
 
     cout << "Do you want to proceed (y or n)?\n";
-    
+
     char answer = 0;
     cin >> answer;
     if (answer == 'y') {
